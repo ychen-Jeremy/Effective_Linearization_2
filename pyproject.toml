@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "softopf"
+version = "0.6.0"
+description = "DPP fixed-loss soft DC-OPF with block training of alpha and rbias."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "h5py",
+    "cvxpy",
+    "osqp",
+]
+
+[tool.setuptools]
+packages = ["softopf"]
